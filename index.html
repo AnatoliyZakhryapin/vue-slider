@@ -22,7 +22,9 @@
                         <a id="arrow-down" class="icon-custom icon-bottom fs-3 arrow-down" href="#">
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div class="card" v-for="object in images">
+                        <div class="card" 
+                            :class="currentIndex === index ? 'active' : ''" v-for="(object, index) in images"
+                        >
                             <img :src="object.image" class="card-img image-carousel">
                         </div>
                      </div>     
