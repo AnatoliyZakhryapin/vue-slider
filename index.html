@@ -26,6 +26,10 @@
                             :class="currentIndex === index ? 'active' : ''" v-for="(object, index) in images"
                         >
                             <img :src="object.image" class="card-img image-carousel">
+                            <div class="card-img-overlay-custom">
+                                <h5 class="card-title">{{ object.title }}</h5>
+                                <p class="card-text">{{ object.text }}</p>
+                            </div>
                         </div>
                      </div>     
                 </div>
