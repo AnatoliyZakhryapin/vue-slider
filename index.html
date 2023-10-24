@@ -15,7 +15,7 @@
         <div class="container pt-5">
             <div class="row justify-content-center">
                 <div class="col-8 position-relative">          
-                    <div class="carousel-box d-flex justify-content-center  align-items-center bg-img-0">
+                    <div class="carousel-box d-flex justify-content-center  align-items-center" :class="'bg-img-' + currentIndex">
                         <a id="arrow-up" class="icon-custom icon-top fs-3 arrow-up" href="#" @click="prevImage()">
                             <i class="fa-solid fa-angle-up"></i>
                         </a>  

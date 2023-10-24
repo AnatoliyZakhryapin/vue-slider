@@ -1,7 +1,7 @@
 const { createApp } = Vue; 
 
 createApp({
-    data() {
+    data: function() {
         return {
             currentIndex: 0,
             images: [
@@ -48,6 +48,6 @@ createApp({
             } else {
                 this.currentIndex--;
             }
-        }
+        },
     }
-}).mount("#app")
+}).mount("#app");
