@@ -22,8 +22,8 @@
                         <a id="arrow-down" class="icon-custom icon-bottom fs-3 arrow-down" href="#">
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div class="card active">
-                            <img :src="images[0].image" class="card-img image-carousel">
+                        <div class="card" v-for="object in images">
+                            <img :src="object.image" class="card-img image-carousel">
                         </div>
                      </div>     
                 </div>
